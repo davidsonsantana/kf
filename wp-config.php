@@ -16,19 +16,19 @@
 
 // ** Configurações do MySQL - Você pode pegar essas informações com o serviço de hospedagem ** //
 /** O nome do banco de dados do WordPress */
-define('DB_NAME', 'nome_do_banco_de_dados');
+define('DB_NAME', 'kf');
 
 /** Usuário do banco de dados MySQL */
-define('DB_USER', 'nome_de_usuario_aqui');
+define('DB_USER', 'root');
 
 /** Senha do banco de dados MySQL */
-define('DB_PASSWORD', 'senha_aqui');
+define('DB_PASSWORD', '');
 
 /** nome do host do MySQL */
 define('DB_HOST', 'localhost');
 
 /** Conjunto de caracteres do banco de dados a ser usado na criação das tabelas. */
-define('DB_CHARSET', 'utf8');
+define('DB_CHARSET', 'utf8mb4');
 
 /** O tipo de collate do banco de dados. Não altere isso se tiver dúvidas. */
 define('DB_COLLATE', '');
@@ -42,14 +42,14 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         'altere cada chave para um frase única');
-define('SECURE_AUTH_KEY',  'altere cada chave para um frase única');
-define('LOGGED_IN_KEY',    'altere cada chave para um frase única');
-define('NONCE_KEY',        'altere cada chave para um frase única');
-define('AUTH_SALT',        'altere cada chave para um frase única');
-define('SECURE_AUTH_SALT', 'altere cada chave para um frase única');
-define('LOGGED_IN_SALT',   'altere cada chave para um frase única');
-define('NONCE_SALT',       'altere cada chave para um frase única');
+define('AUTH_KEY',         '@UXr^r^$(xt)^KV3=+R9DC*m=p$]|>:Cf9N}1i-?e@^=fSMQIOe,0b3l1/kOH|*}');
+define('SECURE_AUTH_KEY',  'uL>p2CZOnuZ;zle#`#V_E1+`G>)1E!fH,AgZ<Z`9AD.Mw7i<#)w_M+`M9-ajM`CK');
+define('LOGGED_IN_KEY',    't 8_LTcHpax!VBj0m`;E=RlMg$_94I0JkA?4.!?rZES+/@[IZ,A2!J:x[ tnJ*]-');
+define('NONCE_KEY',        '*32!hbPDF|2yfV{s=5pfI~hr^%9M9b;Ve^i_o6C #i.3HaKkxAPL680oA@<ymT{N');
+define('AUTH_SALT',        '<YN,oQ)|}i:xVm@g.?+#$^rDBVeEFLafEz44oRSK|jELg)HTOnsG6zR?Mi0KV1p`');
+define('SECURE_AUTH_SALT', 'G3tY1K;5Ql|  uqiFcu$e<!&N&LsmUiLZJ-C8||.r%.U`Wdw3@F< ?^]NJ=_^;Sy');
+define('LOGGED_IN_SALT',   'QMY{WS(44u$Y;O.@Wt%j&$j5R)yF0;C}/<s=,g5/?KyD[m:^0w=<BxxZt>2DCSxv');
+define('NONCE_SALT',       'Db^f[C&-L]G:pF@P%4VX/s+ALM33w:;8|Pa{R~^/i{!uxG O4%.1:V_(LVPEL&/>');
 
 /**#@-*/
 

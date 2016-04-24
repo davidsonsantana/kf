@@ -1,4 +1,4 @@
-<?php
+<?php /* Template Name: KF */
 /**
  * The template for displaying pages
  *
@@ -18,7 +18,8 @@ get_header(); ?>
 
 	<div class="container interna">
 		<div class="header">
-			<h2><?php the_title(); ?></h2>
+			<div class="image"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/logo-kf.png"></div>
+			<h2>KF Soluções de Engenharia</h2>
 		</div>
 		<div class="content">
 			<?php if ( have_posts() ) : ?>

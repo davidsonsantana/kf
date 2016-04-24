@@ -20,6 +20,7 @@
 	<![endif]-->
 	<script>(function(){document.documentElement.className='js'})();</script>
 	<link rel='stylesheet' id='twentyfifteen-style-css'  href='<?php echo esc_url( get_template_directory_uri() ); ?>/bootstrap.css' type='text/css' media='all' />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 	<?php wp_head(); ?>
 
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -29,6 +30,16 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 	<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/bootstrap.js"></script>
+
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.6&appId=1394166567502719";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+  
 </head>
 
 <body <?php body_class(); ?>>
@@ -36,10 +47,9 @@
 	<!-- <a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'twentyfifteen' ); ?></a> -->
 
 
-	<div class="container">
 		<!-- Static navbar -->
-    <nav class="navbar navbar-default">
-      <div class="container-fluid">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
@@ -47,21 +57,9 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <h1><a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
-        	<ul class="social">
-        		<li><a class="twitter" href="#">Twitter</a></li>
-        		<li><a class="face" href="#">Facebook</a></li>
-        		<li><a class="insta" href="#">Instagram</a></li>
-        	</ul>
-
-        	<?php get_search_form(); ?>
-
-          <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav navbar-nav navbar-right' ) ); ?>
+          <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav navbar-nav navbar-left' ) ); ?>
         </div><!--/.nav-collapse -->
       </div><!--/.container-fluid -->
     </nav>
-	</div>
-
-	<div id="content" class="container">

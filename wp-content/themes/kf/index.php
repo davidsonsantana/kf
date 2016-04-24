@@ -16,68 +16,51 @@
 
 get_header(); ?>
 
-	<div class="row">
-		<main id="main" class="col-lg-8" role="main">
+	<!-- Carousel ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img class="first-slide" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/banner02.jpg" alt="First slide">
+        </div>
+        <div class="item">
+          <img class="second-slide" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/banner01.jpg" alt="Second slide">
+        </div>
+      </div>
+    </div><!-- /.carousel -->
 
-		<?php if ( have_posts() ) : ?>
+    <div class="diagonal">&nbsp;</div>
 
-			<?php if ( is_home() && ! is_front_page() ) : ?>
-				<header>
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-				</header>
-			<?php endif; ?>
-
-			<?php
-			// Start the loop.
-			while ( have_posts() ) : the_post();
-
-				/*
-				 * Include the Post-Format-specific template for the content.
-				 * If you want to override this in a child theme, then include a file
-				 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-				 */
-				get_template_part( 'content', get_post_format() );
-
-			// End the loop.
-			endwhile;
-
-			// Previous/next page navigation.
-			the_posts_pagination( array(
-				'prev_text'          => __( 'Previous page', 'twentyfifteen' ),
-				'next_text'          => __( 'Next page', 'twentyfifteen' ),
-				'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'twentyfifteen' ) . ' </span>',
-			) );
-
-		// If no content, include the "No posts found" template.
-		else :
-			get_template_part( 'content', 'none' );
-
-		endif;
-		?>
-
-		</main><!-- .site-main -->
-		<aside class="col-lg-4">
-			<section class="box about">
-				<h2>Titulo</h2>
-			</section>
-
-			<section class="box ads">
-				<h2>Titulo</h2>
-			</section>
-
-			<section class="box partners">
-				<h2>Titulo</h2>
-			</section>
-
-			<section class="box insta">
-				<h2>Titulo</h2>
-			</section>
-
-			<section class="box face">
-				<h2>Titulo</h2>
-			</section>
-
-		</aside>
-	</div><!-- .content-area -->
+    <div class="container">
+    	<div class="row sobre">
+    		<div class="col-md-5">
+	    		<div class="image"><img class="img-responsive" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/img-sobre.png"></div>
+    		</div>
+    		<div class="col-md-7">
+    			<h2><span>Sobre a</span>KF Soluções de Engenharia</h2>
+    			<p>A KF Soluções de Engenharia Ltda é uma empresa jovem e moderna, porém bastante experiente. De origem pernambucana, com sede na cidade do Recife, possui em seu portfólio clientes e projetos de vários Estados do Nordeste.</p>
+				<p>Atuamos na elaboração de projetos de engenharia, tendo como foco principal os projetos de rodovias e ferrovias. Além dessas atividades, a KF oferece ainda treinamentos para profissionais da área, em softwares de projeto.</p>
+				<p>Utilize o menu acima para navegar pelas demais seções de nosso site e conheça melhor a KF Soluções de Engenharia, bem como os serviços que temos para oferecer à sua instituição.</p>
+    		</div>
+    	</div>
+    	<div class="row">
+    		<h2>Vídeos <a class="more" href="<?php echo esc_url( home_url( '/' ) ); ?>index.php/videos">Ver todos</a></h2>
+    		<div class="col-md-3 col-sm-6">
+    			<div class="image"><a href="#"><img class="img-responsive" class="img-responsive" src="http://www.placehold.it/400x200"></a></div>
+    			<h3>Título do vídeo</h3>
+    		</div>
+    		<div class="col-md-3 col-sm-6">
+    			<div class="image"><a href="#"><img class="img-responsive" class="img-responsive" src="http://www.placehold.it/400x200"></a></div>
+    			<h3>Título do vídeo</h3>
+    		</div>
+    		<div class="col-md-3 col-sm-6">
+    			<div class="image"><a href="#"><img class="img-responsive" class="img-responsive" src="http://www.placehold.it/400x200"></a></div>
+    			<h3>Título do vídeo</h3>
+    		</div>
+    		<div class="col-md-3 col-sm-6">
+    			<div class="image"><a href="#"><img class="img-responsive" class="img-responsive" src="http://www.placehold.it/400x200"></a></div>
+    			<h3>Título do vídeo</h3>
+    		</div>
+    	</div>
+    </div>
 
 <?php get_footer(); ?>

@@ -10,20 +10,36 @@
  */
 ?>
 
-	</div><!-- .site-content -->
-
 	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
-			<?php
-				/**
-				 * Fires before the Twenty Fifteen footer text for footer customization.
-				 *
-				 * @since Twenty Fifteen 1.0
-				 */
-				do_action( 'twentyfifteen_credits' );
-			?>
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'twentyfifteen' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'twentyfifteen' ), 'WordPress' ); ?></a>
-		</div><!-- .site-info -->
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<h6>Contato</h6>
+					<p>Fone: +55 (0x81) 3241.8508
+					<br/>	
+					Email: contato@kf.eng.br</p>
+				</div>
+				<div class="col-md-4">
+					<h6>Localização</h6>
+					<p>Rua Gonçalves Dias, 123, Sala 17, Edf. Malungo
+					<br/>
+					Campo Grande, Recife - PE
+					<br/>
+					CEP: 52031-040</p>
+				</div>
+				<div class="col-md-4">
+					<div class="social">
+						<div class="fb-page" data-href="https://www.facebook.com/id2comunicacao/?fref=ts" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/id2comunicacao/?fref=ts"><a href="https://www.facebook.com/id2comunicacao/?fref=ts">ID2 Comunicação Digital</a></blockquote></div></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="sign">
+			<div class="container">
+				<p>Copyright 2016 © www.kf.eng.br</p>
+				<p class="right">Desenvolvido por <a href="http://www.id2comunicacao.com.br" target=_blank><img src="http://www.id2comunicacao.com.br/sign/black.png"></a></p>
+			</div>
+		</div>
 	</footer><!-- .site-footer -->
 
 </div><!-- .site -->

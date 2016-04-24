@@ -9,3 +9,219 @@ License: Private
 Text Domain: #id2comunicacao
 
 */
+
+
+@font-face {
+    font-family: 'montserratlight';
+    src: url('fonts/montserrat-light-webfont.eot');
+    src: url('fonts/montserrat-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/montserrat-light-webfont.woff2') format('woff2'),
+         url('fonts/montserrat-light-webfont.woff') format('woff'),
+         url('fonts/montserrat-light-webfont.ttf') format('truetype'),
+         url('fonts/montserrat-light-webfont.svg#montserratlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+.navbar-inverse{
+	/*background: #474747;*/
+}
+
+.nav > li > a{
+	padding: 20px 15px;
+}
+
+.navbar-nav > li > a{
+	font-family: 'montserratlight';
+}
+
+
+.carousel .item img{
+	width: 100%;
+	height: auto;
+}
+
+
+.diagonal{
+	width: 100%;
+	height: 60px;
+	background: #fff;
+	-ms-transform: skewY(-1.5deg); /* IE 9 */
+    -webkit-transform: skewY(-1.5deg); /* Safari */
+    transform: skewY(-1.5deg);
+    position: relative;
+    top: -30px;
+}
+
+
+
+
+h2{
+	margin: 0 0 35px;
+	font-family: 'montserratlight';
+	font-size: 34px;
+	color: #474747;
+	text-transform: uppercase;
+}
+
+h2 span{
+	font-size: 30px;
+	display: block;
+	text-transform: initial;
+}
+
+h2 a.more{
+	padding: 5px;
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #474747;
+	text-decoration: none;
+	border: 1px solid #636363;
+	position: relative;
+	top: -7px;
+}
+
+h2 a.more:hover{
+	background: #636363;
+	color: #f2f2f2;
+}
+
+
+
+h3{
+	margin: 15px 0;
+	font-family: 'montserratlight';
+	font-size: 20px;
+	color: #474747;
+}
+
+
+
+.sobre .image{
+	position: relative;
+	top: -120px;
+}
+
+.sobre p{
+	text-align: justify;
+}
+
+
+
+
+footer{
+	padding: 25px 0 0;
+	margin-top: 130px;
+	background: #dbdbdb;
+	color: #707070;
+}
+
+footer h6{
+	font-size: 25px;
+	font-family: 'montserratlight';
+	text-transform: uppercase;
+}
+
+
+footer .social{
+	padding: 10px;
+	background: #fff;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	position: relative;
+	top: -50px;
+}
+
+footer .social .insta{
+	padding: 20px 0;
+	display: block;
+	text-align: center;
+}
+
+
+
+footer .sign{
+	padding: 17px 0 8px;
+	background: #c8c8c8;
+	font-size: 12px;
+	color: #888;
+}
+
+footer .sign p{
+	margin: 0;
+	float: left;
+}
+
+footer .sign p.right{
+	float: right;
+}
+
+footer .sign p img{
+	opacity: 0.3;
+}
+
+
+
+
+
+
+
+/* INTERNAS */
+
+.banner-interna{
+	height: 300px;
+	background: #afafaf;
+}
+
+
+.interna .header{
+	margin-top: -140px;
+	margin-bottom: 40px;
+	position: relative;
+	z-index: 9;
+	overflow: hidden;
+}
+
+.interna .header .image{
+	margin: 0 40px 0 0;
+	float: left;
+}
+
+.interna .header h2{
+	margin-top: 110px;
+	text-transform: initial;
+}
+
+
+.interna .content p{
+	text-align: justify;
+    font-size: 13px;
+    line-height: 22px;
+    margin-bottom: 17px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
